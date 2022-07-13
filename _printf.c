@@ -16,7 +16,9 @@ static int (*get_op(const char *format))(va_list)
 		{"s", print_string},
 		{"i", print_percent},
 		{"d", print_dol},
-		{"i", print_int}
+		{"i", print_int},
+		{"b", print_unsigned_int},
+		{NULL, NULL}
 	};
 
 	for (i = 0; cp[i].c != NULL; i++)
@@ -44,7 +46,7 @@ int _printf(const char *format, ...)
 	unsigned int count = 0, i = 0;
 	int (*f)(va_list);
 
-	if (format == NULL)
+	if (!format || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	va_start(ap, format);
 	while (format[i])

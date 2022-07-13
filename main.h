@@ -41,5 +41,6 @@ int print_int(va_list i);
 
 int print_dol(va_list d);
 
+int print_unsigned_int(va_list b);
 
 #endif /* MAIN_H */
