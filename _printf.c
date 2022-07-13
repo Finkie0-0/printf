@@ -16,8 +16,7 @@ static int (*get_op(const char *format))(va_list)
 		{"s", print_string},
 		{"i", print_percent},
 		{"d", print_dol},
-		{"i", print_int},
-		{NULL, NULL}
+		{"i", print_int}
 	};
 
 	for (i = 0; cp[i].c != NULL; i++)
