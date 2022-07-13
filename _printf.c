@@ -18,6 +18,10 @@ static int (*get_op(const char *format))(va_list)
 		{"d", print_dol},
 		{"i", print_int},
 		{"b", print_unsigned_int},
+		{"u", print_unsigned_decimal},
+		{"o", print_octal},
+		{"x", print_unsignedintx},
+		{"X", print_unsignedintX},
 		{NULL, NULL}
 	};
 

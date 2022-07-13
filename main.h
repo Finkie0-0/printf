@@ -43,4 +43,12 @@ int print_dol(va_list d);
 
 int print_unsigned_int(va_list b);
 
+int print_unsigned_decimal(va_list u);
+
+int print_octal(va_list o);
+
+int print_unsignedintx(va_list x);
+
+int print_unsignedintX(va_list X);
+
 #endif /* MAIN_H */
