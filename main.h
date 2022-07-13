@@ -39,28 +39,12 @@ int _printf(const char *format, ...);
 
 /* sub _printf function prototypes  */
 
-int (*get_char_func(const char *format))(va_list);
-
 int print_char(va_list c);
 
 int print_string(va_list s);
 
-int print_int(va_list i);
+int print_percent(va_list ap);
 
-int print_dol(va_list d);
+#endif /* MAIN_H */
 
-int print_unsigned_int(va_list b);
 
-int print_unsigned_decimal(va_list u);
-
-int print_octal(va_list o);
-
-int print_unsignedintx(va_list x);
-
-int print_unsignedintX(va_list X);
-
-int print_addr(va_list p);
-
-int print_stringNon(va_list S);
-
-#endif /* MAIN_H  */
