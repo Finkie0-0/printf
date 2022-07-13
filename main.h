@@ -31,6 +31,8 @@ int _printf(const char *format, ...);
 
 /* sub _printf function prototypes  */
 
+int print_hex(unsigned int n, unsigned int c);
+
 int print_char(va_list c);
 
 int print_string(va_list s);

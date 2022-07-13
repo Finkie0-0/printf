@@ -98,3 +98,15 @@ int print_octal(va_list o)
 	return (counter);
 }
 
+/**
+ * print_unsignedintX - prints out uppercase hexadecimal from unsigned int.
+ *
+ * @X: unsigned int to be printed.
+ *
+ * Return: number of digits to be printed.
+ */
+
+int print_unsignedintX(va_list X)
+{
+	return (print_hex(va_arg(X, unsigned int), 1));
+}
