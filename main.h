@@ -25,14 +25,6 @@ typedef struct character_args
 
 int _putchar(char c);
 
-/* converting prototypes */
-
-int print_hex(unsigned int n, unsigned int c);
-
-unsigned long _power(unsigned int n, unsigned int x);
-
-int hex_printer(char c);
-
 /* main _printf function */
 
 int _printf(const char *format, ...);
@@ -45,6 +37,9 @@ int print_string(va_list s);
 
 int print_percent(va_list ap);
 
+int print_int(va_list i);
+
+int print_dol(va_list d);
+
+
 #endif /* MAIN_H */
-
-
