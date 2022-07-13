@@ -44,9 +44,9 @@ int _printf(const char *format, ...)
 	unsigned int count = 0, i = 0;
 	int (*f)(va_list);
 
-	if (!format || (format[0] == '%' &&  format[1] == '\0'))
+	if (format == NULL)
 		return (-1);
-		va_start(ap, format);
+	va_start(ap, format);
 	while (format[i])
 	{
 		for (; format[i] != '%' && format[i]; i++)
