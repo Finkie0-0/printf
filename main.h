@@ -25,7 +25,6 @@ typedef struct character_args
 
 int _putchar(char c);
 
-
 /* main _printf function */
 
 int _printf(const char *format, ...);
@@ -42,4 +41,5 @@ int print_int(va_list i);
 
 int print_dol(va_list d);
 
-#endif /* MAIN_H  */
+
+#endif /* MAIN_H */
