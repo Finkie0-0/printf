@@ -1,5 +1,7 @@
 #include "main.h"
 
+/* Digits */
+
 /**
  * print_int - prints out an integer.
  *
