@@ -51,3 +51,23 @@ int print_addr(va_list p)
 	}
 	return (counter);
 }
+/**
+ * _power - calculates an exponent.
+ *
+ * @n: base of the exponent.
+ * @x: exponent of the number(base).
+ *
+ * Return: n ^ x.
+ */
+
+static unsigned long _power(unsigned int n, unsigned int x)
+{
+	unsigned int index;
+	unsigned long result = n;
+
+	for (index = 1; index < x; index++)
+	{
+		result *= n;
+	}
+	return (result);
+}
