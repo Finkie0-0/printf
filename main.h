@@ -53,4 +53,6 @@ int print_unsignedintx(va_list x);
 
 int print_unsignedintX(va_list X);
 
+int print_S(va_list S);
+
 #endif /* MAIN_H */
