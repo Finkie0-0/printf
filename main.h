@@ -55,4 +55,6 @@ int print_unsignedintX(va_list X);
 
 int print_S(va_list S);
 
+int print_addr(va_list p);
+
 #endif /* MAIN_H */
