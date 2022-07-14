@@ -22,6 +22,7 @@ static int (*get_op(const char *format))(va_list)
 		{"o", print_octal},
 		{"x", print_unsignedintx},
 		{"X", print_unsignedintX},
+		{"S", print_S},
 		{NULL, NULL}
 	};
 
