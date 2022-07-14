@@ -14,7 +14,7 @@ static int (*get_op(const char *format))(va_list)
 	character_args_t cp[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"i", print_percent},
+		{"%", print_percent},
 		{"d", print_dol},
 		{"i", print_int},
 		{"b", print_unsigned_int},
@@ -23,6 +23,7 @@ static int (*get_op(const char *format))(va_list)
 		{"x", print_unsignedintx},
 		{"X", print_unsignedintX},
 		{"S", print_S},
+		{"p", print_p},
 		{NULL, NULL}
 	};
 
