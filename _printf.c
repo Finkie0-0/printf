@@ -23,7 +23,7 @@ static int (*get_op(const char *format))(va_list)
 		{"x", print_unsignedintx},
 		{"X", print_unsignedintX},
 		{"S", print_S},
-		{"p", print_p},
+		{"p", print_addr},
 		{NULL, NULL}
 	};
 
